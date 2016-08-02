@@ -1,0 +1,91 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Encode / decode a petal JSON file and return to stdout.
+ *
+ * Usage: petal-encode encode|decode sourceFile
+ *
+ */
+
+// Check for mode.
+if (!$mode = checkMode($argv, 1)) {
+    die(usage($argv));
+}
+
+// Check for source file.
+if (!$srcPath = srcPath($argv, 2)) {
+    die(usage($argv));
+}
+
+// Execute function.
+call_user_func($mode, $srcPath);
+
+
+/* ------- */
+/* HELPERS */
+/* ------- */
+
+function encode($srcPath)
+{
+    echo petalEncode($srcPath) . PHP_EOL;
+}
+
+function decode($srcPath)
+{
+    echo prettyJson(extractJson($srcPath)) . PHP_EOL;
+}
+
+function extractJson($filePath)
+{
+    $contents = file_get_contents($filePath);
+    $patternBefore = preg_quote(petalBefore());
+    $patternAfter = preg_quote(petalAfter());
+    preg_match("/{$patternBefore}(.+){$patternAfter}/", $contents, $matches);
+
+    return base64_decode($matches[1]);
+}
+
+function petalBefore()
+{
+    return 'Petal.receiveData(JSON.parse(atob(\'';
+}
+
+function petalAfter()
+{
+    return '\')), document.currentScript.id);';
+}
+
+function petalEncode($filePath)
+{
+    $json = base64_encode(json_encode(json_decode(file_get_contents($filePath))));
+
+    return petalBefore() . $json . petalAfter();
+}
+
+function prettyJson($json)
+{
+    return json_encode(json_decode($json), JSON_PRETTY_PRINT);
+}
+
+function srcPath(array $argv, $index)
+{
+    if (!array_key_exists($index, $argv) || !file_exists($file = $argv[$index])) {
+        return false;
+    }
+
+    return realpath($file);
+}
+
+function checkMode($argv, $index)
+{
+    if (array_key_exists($index, $argv) && in_array($argv[$index], ['encode', 'decode'])) {
+        return $argv[$index];
+    }
+
+    return null;
+}
+
+function usage($argv)
+{
+    return sprintf('Usage: %s encode|decode sourceFile%s', $argv[0], PHP_EOL);
+}
