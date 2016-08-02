@@ -53,7 +53,7 @@ Front-end build system uses Laravel Elixir, a gulp wrapper.
 | dist/css          | Compiled CSS                                      |
 | dist/js           | Transpiled JS                                     |
 | zip               | Destination for creative zip files                |
-| test              | Test campaign data here                           |
+| test              | Test campaign data                                |
 | bin               | Helper scripts                                    |
 
 ### Build Tasks
@@ -110,7 +110,7 @@ is copied from the SmartContent CDK and should not be edited.
 Your ECMAScript 2015 code should begin in `Creative.js` which should extend one of the following
 base classes from the SmartContent CDK:
  
-| Class                 | Where creative requires...                                        |
+| Extend class          | when creative requires...                                         |
 |-----------------------|-------------------------------------------------------------------|
 | VueCreative           | Component based templating features                               |
 | JqueryCreative        | Non trivial DOM manipulation                                      | 
