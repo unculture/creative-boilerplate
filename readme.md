@@ -29,13 +29,12 @@
 
     _Note:_ The campaign boilerplate is tested with the following node versions: 
 
-    ```
-    ➜ node -v
-    v6.3.1
-    
-    ➜ npm -v
-    3.10.3
-    ```
+```
+➜ node -v
+v6.3.1
+➜ npm -v
+3.10.3
+```
 
 6. Now execute `npm run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
