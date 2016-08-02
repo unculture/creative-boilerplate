@@ -1,5 +1,41 @@
 # SmartContent Campaign Creative Boilerplate
 
+## Getting Started
+
+1. Clone / download the `campaign-boilerplate` repository:
+
+`git clone git@bitbucket.org:dynamicdo/campaign-boilerplate.git <new-campaign>`
+
+Where `<new-campaign>` is the desired folder name for the new campaign.
+
+2. Update `name` key in `package.json` with campaign name.
+
+3. Initialize a new git repository:
+
+- `cd <new-campaign>`
+- `rm -r .git`
+- `git init`
+- `git add .`
+- `git commit -am "Initial commit"`
+
+4. Install the node packages:
+
+- `npm install -g gulp`
+- `npm install`
+
+_Note:_ The campaign boilerplate is tested with the following node versions: 
+
+```
+➜ node -v
+v6.3.1
+➜ npm -v
+3.10.3`
+```
+
+5. Now execute `npm run dev` and look for clean output and no errors.
+This will start a watch process so hit Ctl+C to cancel.
+
+
 ## Build Overview
 
 Front-end build system uses Laravel Elixir, a gulp wrapper. 
@@ -66,15 +102,28 @@ The included `scss` file gives you an idea for how to structure your styling.
 
 ### Javascript
 
+### Creative Classes
+
 The `main.js` script is transpiled from the `src/js/main.js` entrypoint. This file
 is copied from the SmartContent CDK and should not be edited.
 
 Your ECMAScript 2015 code should begin in `Creative.js` which should extend one of the following
-classes from the SmartContent CDK:
+base classes from the SmartContent CDK:
  
- - VueCreative.js
- - JqueryCreative.js
- - BaseCreative.js
- 
-These classes contain all the helper functions you need.
+| Class                 | Where creative requires...                                        |
+|-----------------------|-------------------------------------------------------------------|
+| VueCreative           | Component based templating features                               |
+| JqueryCreative        | Non trivial DOM manipulation                                      | 
+| BaseCreative          | Trivial DOM manipulation                                          |
 
+These provide an API with many of the helper functions needed to build a creative. The source of
+each class is well commented so you are advised to take a look at the methods available.
+
+### Additional Libraries
+
+The following libraries are preinstalled and available for import:
+
+- lodash
+- moment
+
+You may `npm install` any additional libraries you need, although always bear in mind file size.
