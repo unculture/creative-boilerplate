@@ -69,14 +69,14 @@ Build tasks should be run using the following npm scripts:
 
 The gulpfile with this boilerplate should require little modification. This includes the following tasks:
 
-| Task      | Description                                               | when                  |
-|-----------|-----------------------------------------------------------|-----------------------|
-| clean()   | Deletes contents of `dist` and `zip`                      | dev / prod / clean    |
-| cdk()     | Copies SmartContent CDK files into `src`                  | dev / prod            |
-| copy()    | Copy tasks for HTML, fonts, and images                    | dev / prod            |
-| sass()    | Compiles `src/sass/main.sass` into `dist/css/main.css`    | dev / prod **         |
-| rollup()  | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
-| zip()     | Creates campaign ZIP file in `zip`                        | prod / zip            |
+| Task          | Description                                               | when                  |
+|---------------|-----------------------------------------------------------|-----------------------|
+| `clean()`     | Deletes contents of `dist` and `zip`                      | dev / prod / clean    |
+| `cdk()`       | Copies SmartContent CDK files into `src`                  | dev / prod            |
+| `copy()`      | Copy tasks for HTML, fonts, and images                    | dev / prod            |
+| `sass()`      | Compiles `src/sass/main.sass` into `dist/css/main.css`    | dev / prod **         |
+| `rollup()`    | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
+| `zip()`       | Creates campaign ZIP file in `zip`                        | prod / zip            |
 
 ** See table below
 
@@ -100,7 +100,7 @@ These files are located in `dist` once a build has completed.
 
 The `css/main.css` stylesheet mentioned above is compiled from the `src/sass/main.scss` entrypoint.
 
-The included `scss` file gives you an idea for how to structure your styling.
+The included `scss` file gives you an idea for how you could structure your SASS.
 
 ### Javascript
 
