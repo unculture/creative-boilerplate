@@ -129,4 +129,4 @@ The following libraries are preinstalled and available for import:
 - lodash
 - moment
 
-You may `npm install` any additional libraries you need, although always bear in mind file size.
+You may `npm install` any additional libraries you need, although always bear in mind file size of the final bundle.
