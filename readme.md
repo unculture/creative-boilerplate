@@ -4,37 +4,37 @@
 
 1. Clone the `campaign-boilerplate` repository:
 
-`git clone git@bitbucket.org:dynamicdo/campaign-boilerplate.git <new-campaign>`
-
-Where `<new-campaign>` is the desired folder name for the new campaign.
-
-Go into the new campaign folder:
-
-`cd <new-campaign>`
+    `git clone git@bitbucket.org:dynamicdo/campaign-boilerplate.git <new-campaign>`
+    
+    Where `<new-campaign>` is the desired folder name for the new campaign.
+    
+    Go into the new campaign folder:
+    
+    `cd <new-campaign>`
 
 2. Edit `package.json` replacing the value of `name` with the campaign name.
 
 3. Initialize a new git repository:
 
-- `rm -rf .git`
-- `git init`
-- `git add .`
-- `git commit -am "Initial commit"`
-- `git remote add origin <new-campaign-git-repo>`
-- `git push origin master`
+    - `rm -rf .git`
+    - `git init`
+    - `git add .`
+    - `git commit -am "Initial commit"`
+    - `git remote add origin <new-campaign-git-repo>`
+    - `git push origin master`
 
 4. Install the node packages:
 
-- `npm install`
+    - `npm install`
 
-_Note:_ The campaign boilerplate is tested with the following node versions: 
+    _Note:_ The campaign boilerplate is tested with the following node versions: 
 
-```
-➜ node -v
-v6.3.1
-➜ npm -v
-3.10.3
-```
+    ```
+    ➜ node -v
+    v6.3.1
+    ➜ npm -v
+    3.10.3
+    ```
 
 5. Now execute `npm run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
