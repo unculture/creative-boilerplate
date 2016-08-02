@@ -8,13 +8,13 @@
     
     Where `<new-campaign>` is the desired folder name for the new campaign.
     
-    Go into the new campaign folder:
+2. Go into the new campaign folder:
     
     `cd <new-campaign>`
 
-2. Edit `package.json` replacing the value of `name` with the campaign name.
+3. Edit `package.json` replacing the value of `name` with the campaign name.
 
-3. Initialize a new git repository:
+4. Initialize a new git repository:
 
     - `rm -rf .git`
     - `git init`
@@ -23,7 +23,7 @@
     - `git remote add origin <new-campaign-git-repo>`
     - `git push origin master`
 
-4. Install the node packages:
+5. Install the node packages:
 
     - `npm install`
 
@@ -36,7 +36,7 @@
     3.10.3
     ```
 
-5. Now execute `npm run dev` and look for clean output and no errors.
+6. Now execute `npm run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
 
 ## Build Overview
