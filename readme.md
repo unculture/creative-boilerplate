@@ -18,7 +18,6 @@
 
     - `rm -rf .git`
     - `git init`
-    - `git add .`
     - `git commit -am "Initial commit"`
     - `git remote add origin <new-campaign-git-repo>`
     - `git push origin master`
