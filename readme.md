@@ -32,6 +32,7 @@
     ```
     ➜ node -v
     v6.3.1
+    
     ➜ npm -v
     3.10.3
     ```
@@ -94,8 +95,8 @@ The gulpfile with this boilerplate should require little modification. This incl
 
 A creative consists of a single `index.html` file which includes one CSS file and one Javascript file:
 
-- main.css
-- main.js
+- css/main.css
+- js/main.js
 
 ### CSS
 
