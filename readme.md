@@ -110,7 +110,7 @@ is copied from the SmartContent CDK and should not be edited.
 Your ECMAScript 2015 code should begin in `Creative.js` which should extend one of the following
 base classes from the SmartContent CDK:
  
-| Extend class          | when creative requires...                                         |
+| Extend class...       | when creative requires...                                         |
 |-----------------------|-------------------------------------------------------------------|
 | VueCreative           | Component based templating features                               |
 | JqueryCreative        | Non trivial DOM manipulation                                      | 
