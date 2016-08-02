@@ -119,6 +119,22 @@ base classes from the SmartContent CDK:
 These provide an API with many of the helper functions needed to build a creative. The source of
 each class is well commented so you are advised to take a look at the methods available.
 
+The provided skeleton `Creative.js` class contains method stubs for the following event handlers which may need to
+be implemented:
+
+| Event Handler             | Receives data from            | Scope     |
+|---------------------------|-------------------------------|-----------|
+| `metaDataReceived()`      | meta.json.js                  | Frame     |
+| `dataReceived()`          | data.json.js                  | Creative  |
+| `campaignDataReceived()`  | campaign-wide-data.json.js    | Campaign  |
+
+| Event Handler | Fires...                                  |
+|---------------|-------------------------------------------|
+| `preStart()`  | Once all dataReceived handlers finished   |
+| `start()`     | When creative is shown by player          |
+
+Those handlers not required can be deleted.
+
 #### Additional Libraries
 
 The following libraries are preinstalled and available for import:

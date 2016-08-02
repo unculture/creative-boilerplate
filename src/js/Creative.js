@@ -17,7 +17,6 @@ export default class extends VueCreative {
 
   }
 
-
   /**
    * Receives data
    *
@@ -39,6 +38,12 @@ export default class extends VueCreative {
    * Triggered when all data is received
    */
   preStart() {
+  }
+
+  /**
+   * Triggered at the moment Creative is shown
+   */
+  start() {
 
   }
 
@@ -47,7 +52,8 @@ export default class extends VueCreative {
   // -----------------
 
   /**
-   * If extending VueCreative this should return your Vue components
+   * If extending VueCreative this should return Vue
+   * components to pass to the root Vue instance.
    *
    * @returns {}
    */
