@@ -91,12 +91,14 @@ The gulpfile with this boilerplate should require little modification. This incl
 
 A creative consists of a single `index.html` file which includes one CSS file and one Javascript file:
 
-- css/main.css
-- js/main.js
+- `css/main.css`
+- `js/main.js`
+
+These files are located in `dist` once a build has completed.
 
 ### CSS
 
-The `main.css` stylesheet is compiled from the `src/sass/main.scss` entrypoint.
+The `css/main.css` stylesheet mentioned above is compiled from the `src/sass/main.scss` entrypoint.
 
 The included `scss` file gives you an idea for how to structure your styling.
 
@@ -104,7 +106,7 @@ The included `scss` file gives you an idea for how to structure your styling.
 
 #### Creative Classes
 
-The `main.js` script is transpiled from the `src/js/main.js` entrypoint. This file
+The `js/main.js` script mentioned above is transpiled from the `src/js/main.js` entrypoint. This file
 is copied from the SmartContent CDK and should not be edited.
 
 Your ECMAScript 2015 code should begin in `Creative.js` which should extend one of the following
@@ -116,7 +118,7 @@ base classes from the SmartContent CDK:
 | JqueryCreative        | Non trivial DOM manipulation                                      | 
 | BaseCreative          | Trivial DOM manipulation                                          |
 
-These provide an API with many of the helper functions needed to build a creative. The source of
+These provide an API with many helper functions needed to build a creative. The source of
 each class is well commented so you are advised to take a look at the methods available.
 
 The provided skeleton `Creative.js` class contains method stubs for the following event handlers which may need to
