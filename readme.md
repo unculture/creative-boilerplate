@@ -12,7 +12,7 @@
     
     `cd <new-campaign>`
 
-3. Edit `package.json` replacing the value of `name` with the campaign name.
+3. Edit `package.json` replacing the values of `name` and `description` with those for the new campaign.
 
 4. Initialize a new git repository:
 
