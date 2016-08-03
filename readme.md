@@ -124,11 +124,11 @@ each class is well commented so you are advised to take a look at the methods av
 The provided skeleton `Creative.js` class contains method stubs for the following event handlers which may need to
 be implemented:
 
-| Event Handler             | Receives data from            | Scope     |
-|---------------------------|-------------------------------|-----------|
-| `metaDataReceived()`      | meta.json.js                  | Frame     |
-| `dataReceived()`          | data.json.js                  | Creative  |
-| `campaignDataReceived()`  | campaign-wide-data.json.js    | Campaign  |
+| Event Handler                     | Receives data from            | Scope     |
+|-----------------------------------|-------------------------------|-----------|
+| `metaDataReceivedHandler()`       | meta.json.js                  | Frame     |
+| `dataReceivedHandler()`           | data.json.js                  | Creative  |
+| `campaignDataReceivedHandler()`   | campaign-wide-data.json.js    | Campaign  |
 
 | Event Handler | Fires...                                  |
 |---------------|-------------------------------------------|
