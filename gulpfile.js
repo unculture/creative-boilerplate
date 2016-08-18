@@ -10,7 +10,7 @@ require('smartcontent-cdk/tasks');
  | through the creative mixin.
  |
  | Any custom tasks specific to the creative should be defined
- | in `./tasks.js` and called below.
+ | in `./tasks.js` and called above or below `mix.creative()`.
  |
  */
 

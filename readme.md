@@ -62,21 +62,25 @@ Build tasks should be run using the following npm scripts:
 
 | Task              | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
+| `npm run update`  | Update SmartContent CDK package and copy latest files to creative         |
 | `npm run dev`     | watches `src` folder for changes & builds into `dist`                     |
 | `npm run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
 | `npm run clean`   | cleans `dist` and `zip` folders                                           |
 | `npm run zip`     | produces creative ZIP file from `dist`                                    |
 
-The gulpfile with this boilerplate should require little modification. This includes the following tasks:
+The gulpfile with this boilerplate should require little modification. This includes one task which 
+runs the following operations:
 
-| Task          | Description                                               | when                  |
+| Operation     | Description                                               | when                  |
 |---------------|-----------------------------------------------------------|-----------------------|
-| `clean()`     | Deletes contents of `dist` and `zip`                      | dev / prod / clean    |
-| `cdk()`       | Copies SmartContent CDK files into `src`                  | dev / prod            |
-| `copy()`      | Copy tasks for HTML, fonts, and images                    | dev / prod            |
-| `sass()`      | Compiles `src/sass/main.sass` into `dist/css/main.css`    | dev / prod **         |
-| `rollup()`    | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
-| `zip()`       | Creates creative ZIP file in `zip`                        | prod / zip            |
+| clean         | Deletes contents of `dist` and `zip`                      | dev / prod / clean    |
+| copy          | Copy fonts and images                                     | dev / prod            |
+| sass          | Compiles `src/sass/main.sass` into `dist/css/main.css`    | dev / prod **         |
+| postCss       | Updates CSS URL paths ready for inline-source             | prod                  |
+| rollup        | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
+| processHtml   | Replaces template variables                               | dev / prod            |
+| processHtml   | Inlines CSS and JS                                        | prod                  |
+| zip           | Creates creative ZIP file in `zip`                        | prod / zip            |
 
 ** See table below
 
@@ -84,6 +88,11 @@ The gulpfile with this boilerplate should require little modification. This incl
 |-------------------|-----------|---------------|
 | `npm run dev`     | no        | yes           |
 | `npm run prod`    | yes       | no            |            
+
+#### Custom Tasks
+
+Any custom tasks specific to the creative should be defined
+`./tasks.js` which is automatically included by the CDK.
 
 ## Creative Structure
 
@@ -95,6 +104,8 @@ A creative consists of a single `index.html` file which includes one CSS file an
 - `js/main.js`
 
 These files are located in `dist` once a build has completed.
+
+In production the CSS and JS are inlined.
 
 ### CSS
 
