@@ -1,6 +1,5 @@
 var elixir = require('laravel-elixir');
 require('smartcontent-cdk/tasks');
-require('./tasks');
 
 /*
  |-----------------------------
