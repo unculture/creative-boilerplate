@@ -1,16 +1,16 @@
-# SmartContent Campaign Creative Boilerplate
+# SmartContent Creative Boilerplate
 
 ## Getting Started
 
-1. Clone the `campaign-boilerplate` repository:
+1. Clone the `creative-boilerplate` repository:
 
-    `git clone git@bitbucket.org:dynamicdo/campaign-boilerplate.git <new-campaign>`
+    `git clone git@bitbucket.org:dynamicdo/creative-boilerplate.git <new-creative>`
     
-    Where `<new-campaign>` is the desired folder name for the new campaign.
+    Where `<new-creative>` is the desired folder name for the new creative.
     
-2. Go into the new campaign folder:
+2. Go into the new creative folder:
     
-    `cd <new-campaign>`
+    `cd <new-creative>`
 
 3. Edit `package.json` replacing the values of `name` and `description` with those for the new campaign.
 
@@ -20,14 +20,14 @@
     - `git init`
     - `git add .`
     - `git commit -am "Initial commit"`
-    - `git remote add origin <new-campaign-git-repo>`
+    - `git remote add origin <new-creative-git-repo>`
     - `git push origin master`
 
 5. Install the node packages:
 
     - `npm install`
 
-    _Note:_ The campaign boilerplate is tested with the following node versions: 
+    _Note:_ The creative boilerplate is tested with the following node versions: 
 
     `node -v => v6.3.1`
 
