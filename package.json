@@ -8,7 +8,8 @@
     "clean": "gulp clean",
     "dev": "gulp watch",
     "prod": "gulp --production",
-    "zip": "gulp zip --production"
+    "zip": "gulp zip --production",
+    "postinstall": "npm run update"
   },
   "devDependencies": {
     "archiver": "^1.0.0",
