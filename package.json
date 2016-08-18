@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "SmartContent Campaign Boilerplate",
   "scripts": {
+    "update": "npm install smartcontent-cdk; gulp --updateCdk",
     "clean": "gulp clean",
     "dev": "gulp watch",
     "prod": "gulp --production",
@@ -13,11 +14,15 @@
     "archiver": "^1.0.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-template": "^4.0.0",
     "jquery": "^3.1.0",
     "laravel-elixir": "^6.0.0-9",
     "laravel-elixir-rollup-official": "^1.0.4",
     "lodash": "^4.14.0",
     "moment": "^2.14.1",
+    "postcss-url": "^5.1.2",
     "smartcontent-cdk": "git+ssh://git@bitbucket.org/dynamicdo/smartcontent-cdk.git",
     "vue": "^1.0.26"
   }
