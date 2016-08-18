@@ -12,7 +12,7 @@
     
     `cd <new-creative>`
 
-3. Edit `package.json` replacing the values of `name` and `description` with those for the new campaign.
+3. Edit `package.json` replacing the values of `name` and `description` with those for the new creative.
 
 4. Initialize a new git repository:
 
@@ -53,7 +53,7 @@ Front-end build system uses Laravel Elixir, a gulp wrapper.
 | dist/css          | Compiled CSS                                      |
 | dist/js           | Transpiled JS                                     |
 | zip               | Destination for creative zip files                |
-| test              | Test campaign data                                |
+| test              | Test data                                         |
 | bin               | Helper scripts                                    |
 
 ### Build Tasks
@@ -65,7 +65,7 @@ Build tasks should be run using the following npm scripts:
 | `npm run dev`     | watches `src` folder for changes & builds into `dist`                     |
 | `npm run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
 | `npm run clean`   | cleans `dist` and `zip` folders                                           |
-| `npm run zip`     | produces campaign ZIP file from `dist`                                    |
+| `npm run zip`     | produces creative ZIP file from `dist`                                    |
 
 The gulpfile with this boilerplate should require little modification. This includes the following tasks:
 
@@ -76,7 +76,7 @@ The gulpfile with this boilerplate should require little modification. This incl
 | `copy()`      | Copy tasks for HTML, fonts, and images                    | dev / prod            |
 | `sass()`      | Compiles `src/sass/main.sass` into `dist/css/main.css`    | dev / prod **         |
 | `rollup()`    | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
-| `zip()`       | Creates campaign ZIP file in `zip`                        | prod / zip            |
+| `zip()`       | Creates creative ZIP file in `zip`                        | prod / zip            |
 
 ** See table below
 
