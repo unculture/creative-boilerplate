@@ -1,6 +1,6 @@
 //import BaseCreative from 'smartcontent-cdk/lib/classes/BaseCreative';
 //import JqueryCreative from 'smartcontent-cdk/lib/classes/JqueryCreative';
-//import VueCreative from 'smartcontent-cdk/lib/classes/VueCreative';
+import VueCreative from 'smartcontent-cdk/lib/classes/VueCreative';
 
 export default class extends VueCreative {
   constructor(window) {
