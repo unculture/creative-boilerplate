@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "campaign-boilerplate",
+  "name": "creative-boilerplate",
   "version": "1.0.0",
-  "description": "SmartContent Campaign Boilerplate",
+  "description": "SmartContent Creative Boilerplate",
   "scripts": {
     "update": "npm install smartcontent-cdk; gulp --updateCdk",
     "clean": "gulp clean",
