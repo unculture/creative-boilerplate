@@ -44,6 +44,7 @@ Front-end build system uses Laravel Elixir, a gulp wrapper.
 
 | Folder            | Description                                       |
 |-------------------|---------------------------------------------------|
+| assets            | Pre-processed images                              |
 | src/js            | ECMAScript2015 scripts                            |
 | src/sass          | SASS files                                        |
 | src/fonts         | Custom fonts, copied to dist                      |
