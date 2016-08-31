@@ -2,6 +2,8 @@
 NamePlaceholder="creative-boilerplate"
 echo -n "Enter project name and press [ENTER]:"
 read project
+project="$(echo -n "${project}" | sed -e 's/[^[:alnum:]]/-/g' \
+| tr -s '-' | tr A-Z a-z)"
 sed "s/$NamePlaceholder/$project/g" "./package.json" > "./package.json.tmp"
 mv "./package.json.tmp" "package.json"
 
@@ -22,3 +24,5 @@ git remote add origin "$origin"
 git push -u origin master
 
 npm install
+
+npm run dev
