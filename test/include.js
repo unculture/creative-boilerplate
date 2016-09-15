@@ -1,1 +1,1 @@
-module.exports = '';
+module.exports = '<script src="js/test.js"></script>';
