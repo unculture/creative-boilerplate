@@ -25,7 +25,7 @@
     "lodash": "^4.14.0",
     "moment": "^2.14.1",
     "postcss-url": "^5.1.2",
-    "smartcontent-cdk": "git+ssh://git@bitbucket.org/dynamicdo/smartcontent-cdk.git",
+    "smartcontent-cdk": "git+ssh://git@bitbucket.org/dynamicdo/smartcontent-cdk.git#master",
     "stream-browserify": "^2.0.1",
     "vue": "^1.0.26"
   }

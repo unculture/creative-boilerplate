@@ -3,49 +3,35 @@
 import VueCreative from 'smartcontent-cdk/lib/classes/VueCreative';
 
 export default class extends VueCreative {
-  constructor(window) {
-    super(window);
 
-  }
+  /*
+   Retrieve data using the following methods:
+   - meta: this.dataGetMeta()
+   - campaign: this.dataGetCampaign()
+   - content-items: this.dataGetItems()
+   */
 
   /**
-   * Receives data
+   * Fired when all data is received
    *
-   * @param data
    */
-  metaDataReceivedHandler(data) {
+  // dataReceived() {
+  // }
 
-  }
 
   /**
-   * Receives data
+   * Fired when all assets are loaded
    *
-   * @param data
    */
-  dataReceivedHandler(data) {
-
-  }
+  // assetsLoaded() {
+  // }
 
   /**
-   * Receives campaignData
-   *
-   * @param data
+   * Triggered at the moment Creative is shown.
+   * Optional, remove if not required.
    */
-  campaignDataReceivedHandler(data) {
-  }
-
-  /**
-   * Triggered when all data is received
-   */
-  preStart() {
-  }
-
-  /**
-   * Triggered at the moment Creative is shown
-   */
-  start() {
-
-  }
+  // start() {
+  // }
 
 
   // CREATIVE SPECIFIC
@@ -55,11 +41,25 @@ export default class extends VueCreative {
    * If extending VueCreative this should return Vue
    * components to pass to the root Vue instance.
    *
-   * @returns {}
+   * @returns {*}
    */
-  components() {
-    return {};
-  }
+  // components() {
+  //   return {};
+  // }
+
+  /**
+   * If verification of asset loading is required, return a
+   * list of content item asset `type` and `name`.
+   * Valid types are 'image' and 'video'.
+   *
+   * @return []
+   */
+  // itemAssets() {
+  //   return [
+  //     {
+  //       name: 'foo',
+  //       type: 'image'
+  //     }
+  //   ];
+  // }
 }
-
-
