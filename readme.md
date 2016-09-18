@@ -133,21 +133,29 @@ base classes from the SmartContent CDK:
 These provide an API with many helper functions needed to build a creative. The source of
 each class is well commented so you are advised to take a look at the methods available.
 
-The provided skeleton `Creative.js` class contains method stubs for the following event handlers which may need to
-be implemented:
+##### Implementing Logic
 
-| Event Handler                     | Receives data from            | Scope     |
-|-----------------------------------|-------------------------------|-----------|
-| `metaDataReceivedHandler()`       | meta.json.js                  | Frame     |
-| `dataReceivedHandler()`           | data.json.js                  | Creative  |
-| `campaignDataReceivedHandler()`   | campaign-wide-data.json.js    | Campaign  |
+The provided skeleton `Creative.js` class contains method stubs for the following event handlers,
+one of which will be the entry point for the creative logic:
 
-| Event Handler | Fires...                                  |
-|---------------|-------------------------------------------|
-| `preStart()`  | Once all dataReceived handlers finished   |
-| `start()`     | When creative is shown by player          |
+| Event Handler     | Fires...                                  |
+|-------------------|-------------------------------------------|
+| `dataReceived()`  | when all data has been received           |
+| `assetsLoaded()`  | when all defined assets have loaded       |
+| `start()`         | when creative is shown by player          |
 
 Those handlers not required can be deleted.
+
+##### Accessing data
+
+Within the handlers above data may be accessed using the following methods:
+
+| Method                    | Returns                       | Scope     | File on player                |
+|---------------------------|-------------------------------|-----------|------------------------------ |
+| `this.dataGetMeta()`      | frame meta data `object`      | Frame     | meta.json.js                  |
+| `this.dataGetCampaign()`  | campaign wide data `object`   | Campaign  | campaign-wide-data.json.js    |
+| `this.dataGetItems()`     | content items `array`         | Creative  | data.json.js                  |
+
 
 #### Additional Libraries
 
