@@ -12,7 +12,7 @@ export default class extends VueCreative {
    */
 
   /**
-   * Fired when all data is received
+   * Called when all data is received
    *
    */
   // dataReceived() {
@@ -20,14 +20,14 @@ export default class extends VueCreative {
 
 
   /**
-   * Fired when all assets are loaded
+   * Called when all assets are loaded
    *
    */
   // assetsLoaded() {
   // }
 
   /**
-   * Triggered at the moment Creative is shown.
+   * Called at the moment Creative is shown.
    * Optional, remove if not required.
    */
   // start() {

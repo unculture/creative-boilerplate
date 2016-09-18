@@ -138,7 +138,7 @@ each class is well commented so you are advised to take a look at the methods av
 The provided skeleton `Creative.js` class contains method stubs for the following event handlers,
 one of which will be the entry point for the creative logic:
 
-| Event Handler     | Fires...                                  |
+| Event Handler     | Called...                                 |
 |-------------------|-------------------------------------------|
 | `dataReceived()`  | when all data has been received           |
 | `assetsLoaded()`  | when all defined assets have loaded       |
