@@ -1,32 +1,16 @@
 {
   "private": true,
   "name": "creative-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "SmartContent Creative Boilerplate",
   "scripts": {
-    "update": "npm install smartcontent-cdk; gulp --updateCdk",
-    "clean": "gulp clean",
+    "update": "npm install smartcontent-cdk; npm shrinkwrap --dev; gulp --updateCdk",
+    "events": "gulp --browserEvents",
     "dev": "gulp watch",
     "prod": "gulp --production",
-    "zip": "gulp zip --production",
-    "postinstall": "npm run update"
+    "zip": "gulp zip --production"
   },
   "devDependencies": {
-    "archiver": "^1.0.0",
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-inline-source": "^3.0.0",
-    "gulp-postcss": "^6.1.1",
-    "gulp-template": "^4.0.0",
-    "jquery": "^3.1.0",
-    "laravel-elixir": "^6.0.0-10",
-    "laravel-elixir-rollup-official": "^1.0.4",
-    "laravel-elixir-webpack-official": "^1.0.5",
-    "lodash": "^4.14.0",
-    "moment": "^2.14.1",
-    "postcss-url": "^5.1.2",
-    "smartcontent-cdk": "git+ssh://git@bitbucket.org/dynamicdo/smartcontent-cdk.git#master",
-    "stream-browserify": "^2.0.1",
-    "vue": "^1.0.26"
+    "smartcontent-cdk": "git+ssh://git@bitbucket.org/dynamicdo/smartcontent-cdk.git#master"
   }
 }
