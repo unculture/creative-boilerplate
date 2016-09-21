@@ -48,6 +48,22 @@ export default class extends VueCreative {
   // }
 
   /**
+   * If verification of Creative asset loading is required,
+   * return a list of assets `type` and `name`.
+   * Valid types are 'image' and 'video'.
+   *
+   * @return []
+   */
+  // creativeAssets() {
+  //   return [
+  //     {
+  //       name: 'foo',
+  //       type: 'image'
+  //     }
+  //   ];
+  // }
+
+  /**
    * If verification of asset loading is required, return a
    * list of content item asset `type` and `name`.
    * Valid types are 'image' and 'video'.

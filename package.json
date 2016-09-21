@@ -5,7 +5,7 @@
   "description": "SmartContent Creative Boilerplate",
   "scripts": {
     "update": "npm install smartcontent-cdk; npm shrinkwrap --dev; gulp --updateCdk",
-    "events": "gulp --browserEvents",
+    "events": "gulp --browserEvents --production",
     "dev": "gulp watch",
     "prod": "gulp --production",
     "zip": "gulp zip --production"
