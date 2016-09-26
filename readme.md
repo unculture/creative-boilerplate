@@ -66,7 +66,6 @@ Build tasks should be run using the following npm scripts:
 | `npm run update`  | Update SmartContent CDK package and copy latest files to creative         |
 | `npm run dev`     | watches `src` folder for changes & builds into `dist`                     |
 | `npm run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
-| `npm run clean`   | cleans `dist` and `zip` folders                                           |
 | `npm run zip`     | produces creative ZIP file from `dist`                                    |
 
 The gulpfile with this boilerplate should require little modification. This includes one task which 
@@ -85,10 +84,10 @@ runs the following operations:
 
 ** See table below
 
-| Task              | Minifies  | Source maps   |
-|-------------------|-----------|---------------|
-| `npm run dev`     | no        | yes           |
-| `npm run prod`    | yes       | no            |            
+| Task              | Minifies  | Source maps   | Watches |
+|-------------------|-----------|---------------|---------|
+| `npm run dev`     | no        | yes           | yes     |
+| `npm run prod`    | yes       | no            | no      |           
 
 #### Custom Tasks
 
@@ -106,7 +105,7 @@ A creative consists of a single `index.html` file which includes one CSS file an
 
 These files are located in `dist` once a build has completed.
 
-In production the CSS and JS are inlined.
+In production the CSS and JS are inlined into `index.html`.
 
 ### CSS
 
@@ -126,7 +125,7 @@ base classes from the SmartContent CDK:
  
 | Extend class...       | when creative requires...                                         |
 |-----------------------|-------------------------------------------------------------------|
-| VueCreative           | Component based templating features                               |
+| VueCreative           | Component based templating or CDK components                      |
 | JqueryCreative        | Non trivial DOM manipulation                                      | 
 | BaseCreative          | Trivial DOM manipulation                                          |
 
