@@ -12,32 +12,30 @@
     
     `cd <new-creative>`
 
-3. Edit `package.json` replacing the values of `name` and `description` with those for the new creative.
+3. Run `./setup.sh` which will perform the following tasks:
 
-4. Clear the contents of the `readme.md` file.
-
-5. Initialize a new git repository:
-
-    - `rm -rf .git`
-    - `git init`
-    - `git add .`
-    - `git commit -am "Initial commit"`
-    - `git remote add origin <new-creative-git-repo>`
-    - `git push origin master`
-
-6. Install the node packages:
-
-    - `yarn install`
+    * Updates `package.json` replacing the values of `name` and `description` with those for the new creative.
+    * Clears contents of the `readme.md` file.
+    * Initialises a new git repository
+        - `rm -rf .git`
+        - `git init`
+        - `git add .`
+        - `git commit -am "Initial commit"`
+        - `git remote add origin <new-creative-git-repo>`
+        - `git push origin master`
+        - `yarn install`
 
     _Note:_ The creative boilerplate is tested with the following node versions: 
 
+    `bash --version => GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
+    
     `node -v => v6.3.1`
 
     `npm -v => 3.10.3`
     
     `yarn -V => 0.16.1`
 
-7. Now execute `yarn run dev` and look for clean output and no errors.
+4. Now execute `yarn run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
 
 ## Build Overview
@@ -58,7 +56,8 @@ Front-end build system uses Laravel Elixir, a gulp wrapper.
 | dist/css          | Compiled CSS                                      |
 | dist/js           | Transpiled JS                                     |
 | zip               | Destination for creative zip files                |
-| test              | Test data                                         |
+| test/data         | Test data                                         |
+| test/assets       | Test assets                                       |
 | bin               | Helper scripts                                    |
 
 ### Build Tasks
