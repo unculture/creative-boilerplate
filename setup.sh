@@ -1,28 +1,33 @@
 #!/bin/bash
-NamePlaceholder="creative-boilerplate"
+
+placeholderName="creative-boilerplate"
+placeholderDescription="SmartContent Creative Boilerplate"
+
+# Ask for project name
 echo -n "Enter project name and press [ENTER]:"
-read project
-project="$(echo -n "${project}" | sed -e 's/[^[:alnum:]]/-/g' \
-| tr -s '-' | tr A-Z a-z)"
-sed "s/$NamePlaceholder/$project/g" "./package.json" > "./package.json.tmp"
-mv "./package.json.tmp" "package.json"
+read projectName
 
-DescPlaceholder="SmartContent Creative Boilerplate"
+# Normalise project name and set in package.json
+projectName="$(echo -n "${projectName}" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)"
+sed -i "s/$placeholderName/$projectName/g" "./package.json"
+
+# Ask for project description, and set in package.json and readme
 echo -n "Enter project description and press [ENTER]:"
-read desc
-sed "s/$DescPlaceholder/$desc/g" "./package.json" > "./package.json.tmp"
-mv "./package.json.tmp" "package.json"
+read projectDescription
+sed -i "s/$placeholderDescription/$projectDescription/g" "./package.json"
+echo "# $projectDescription" > "./readme.md"
 
+# Ask for git repository
 echo -n "Enter git repo target and press [ENTER]:"
 read origin
 
+# Initialise fresh git repository
 rm -rf ".git"
 git init
 git add .
 git commit -am "Initial commit by setup.sh"
 git remote add origin "$origin"
-git push -u origin master
+git push origin master
 
-npm install
-
-npm run dev
+# Install packages
+yarn install
