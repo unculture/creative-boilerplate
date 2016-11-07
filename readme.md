@@ -14,7 +14,9 @@
 
 3. Edit `package.json` replacing the values of `name` and `description` with those for the new creative.
 
-4. Initialize a new git repository:
+4. Clear the contents of the `readme.md` file.
+
+5. Initialize a new git repository:
 
     - `rm -rf .git`
     - `git init`
@@ -23,17 +25,19 @@
     - `git remote add origin <new-creative-git-repo>`
     - `git push origin master`
 
-5. Install the node packages:
+6. Install the node packages:
 
-    - `npm install`
+    - `yarn install`
 
     _Note:_ The creative boilerplate is tested with the following node versions: 
 
     `node -v => v6.3.1`
 
     `npm -v => 3.10.3`
+    
+    `yarn -V => 0.16.1`
 
-6. Now execute `npm run dev` and look for clean output and no errors.
+7. Now execute `yarn run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
 
 ## Build Overview
@@ -59,14 +63,14 @@ Front-end build system uses Laravel Elixir, a gulp wrapper.
 
 ### Build Tasks
 
-Build tasks should be run using the following npm scripts:
+Build tasks should be run using the following yarn scripts:
 
 | Task              | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| `npm run update`  | Update SmartContent CDK package and copy latest files to creative         |
-| `npm run dev`     | watches `src` folder for changes & builds into `dist`                     |
-| `npm run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
-| `npm run zip`     | produces creative ZIP file from `dist`                                    |
+| `yarn run update`  | Update SmartContent CDK package and copy latest files to creative         |
+| `yarn run dev`     | watches `src` folder for changes & builds into `dist`                     |
+| `yarn run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
+| `yarn run zip`     | produces creative ZIP file from `dist`                                    |
 
 The gulpfile with this boilerplate should require little modification. This includes one task which 
 runs the following operations:
@@ -86,8 +90,8 @@ runs the following operations:
 
 | Task              | Minifies  | Source maps   | Watches |
 |-------------------|-----------|---------------|---------|
-| `npm run dev`     | no        | yes           | yes     |
-| `npm run prod`    | yes       | no            | no      |           
+| `yarn run dev`     | no        | yes           | yes     |
+| `yarn run prod`    | yes       | no            | no      |           
 
 #### Custom Tasks
 
@@ -163,4 +167,4 @@ The following libraries are preinstalled and available for import:
 - lodash
 - moment
 
-You may `npm install` any additional libraries you need, although always bear in mind file size of the final bundle.
+You may `yarn install` any additional libraries you need, although always bear in mind file size of the final bundle.
