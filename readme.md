@@ -25,7 +25,7 @@
         - `git push origin master`
         - `yarn install`
 
-    _Note:_ The creative boilerplate is tested with the following node versions: 
+    _Note:_ The creative boilerplate is tested with the following software versions: 
 
     `bash --version => GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
     
