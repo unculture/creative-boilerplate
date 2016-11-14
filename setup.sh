@@ -15,7 +15,7 @@ sed -i.bak "s/$placeholderName/$projectNameSlug/g" package.json
 echo -n "Enter project description and press [ENTER]:"
 read projectDescription
 sed -i.bak "s/$placeholderDescription/$projectDescription/g" package.json
-echo "# $projectName\n\n$projectDescription" > "./readme.md"
+echo -e "# $projectName\n\n$projectDescription" > "./readme.md"
 
 rm package.json.bak
 
