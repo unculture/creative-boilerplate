@@ -11,7 +11,7 @@ GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
 $ node -v
 v6.3.1
 
-npm -v
+$ npm -v
 3.10.3
 ```
 
