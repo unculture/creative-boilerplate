@@ -167,7 +167,7 @@ Within the handlers above data may be accessed using the following methods:
 
 The following libraries are preinstalled and available for import:
 
-- lodash
-- moment
+- [lodash](https://lodash.com)
+- [moment.js](http://momentjs.com/)
 
-You may `yarn install` any additional libraries you need, although always bear in mind file size of the final bundle.
+You may `yarn add <package> --dev` any additional libraries you need, although always bear in mind file size of the final bundle.
