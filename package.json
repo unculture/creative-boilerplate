@@ -1,16 +1,16 @@
 {
   "private": true,
   "name": "creative-boilerplate",
-  "version": "3.5.2",
+  "version": "3.6.0",
   "description": "SmartContent Creative Boilerplate",
   "scripts": {
-    "upgrade": "yarn upgrade smartcontent-cdk; gulp --updateCdk",
+    "upgrade": "npm update smartcontent-cdk; npm shrinkwrap --dev; gulp --updateCdk",
     "events": "gulp --browserEvents --production",
     "dev": "gulp watch",
     "prod": "gulp --production",
     "zip": "gulp zip --production"
   },
   "devDependencies": {
-    "smartcontent-cdk": "^0.4.2"
+    "smartcontent-cdk": "^0.5.0"
   }
 }

@@ -32,4 +32,4 @@ git remote add origin "$origin"
 git push origin master
 
 # Install packages
-yarn install
+npm install

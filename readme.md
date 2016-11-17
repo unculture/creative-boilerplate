@@ -1,20 +1,14 @@
 # SmartContent Creative Boilerplate
 
 ## Getting Started
-
-0. Install [yarn package manager](https://yarnpkg.com/)
-
-    `npm install -g yarn`
     
-    _Note:_ The creative boilerplate is tested with the following software versions: 
+The creative boilerplate is tested with the following software versions: 
 
-    `bash --version => GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
-    
-    `node -v => v6.3.1`
+`bash --version => GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
 
-    `npm -v => 3.10.3`
-    
-    `yarn -V => 0.17.3`
+`node -v => v6.3.1`
+
+`npm -v => 3.10.3`
     
 1. Clone the `creative-boilerplate` repository:
 
@@ -37,9 +31,9 @@
         - `git commit -am "Initial commit"`
         - `git remote add origin <new-creative-git-repo>`
         - `git push origin master`
-        - `yarn install`
+        - `npm install`
 
-4. Now execute `yarn run dev` and look for clean output and no errors.
+4. Now execute `npm run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
 
 ## Build Overview
@@ -66,14 +60,14 @@ Front-end build system uses Laravel Elixir, a gulp wrapper.
 
 ### Build Tasks
 
-Build tasks should be run using the following yarn scripts:
+Build tasks should be run using the following npm scripts:
 
-| Task               | Description                                                               |
-|--------------------|---------------------------------------------------------------------------|
-| `yarn run upgrade` | Upgrade SmartContent CDK package and copy latest files to creative        |
-| `yarn run dev`     | watches `src` folder for changes & builds into `dist`                     |
-| `yarn run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
-| `yarn run zip`     | produces creative ZIP file from `dist`                                    |
+| Task              | Description                                                               |
+|-------------------|---------------------------------------------------------------------------|
+| `npm run upgrade` | Upgrade SmartContent CDK package and copy latest files to creative        |
+| `npm run dev`     | watches `src` folder for changes & builds into `dist`                     |
+| `npm run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
+| `npm run zip`     | produces creative ZIP file from `dist`                                    |
 
 The gulpfile with this boilerplate should require little modification. This includes one task which 
 runs the following operations:
@@ -93,8 +87,8 @@ runs the following operations:
 
 | Task              | Minifies  | Source maps   | Watches |
 |-------------------|-----------|---------------|---------|
-| `yarn run dev`     | no        | yes           | yes     |
-| `yarn run prod`    | yes       | no            | no      |           
+| `npm run dev`     | no        | yes           | yes     |
+| `npm run prod`    | yes       | no            | no      |           
 
 #### Custom Tasks
 
@@ -170,4 +164,4 @@ The following libraries are preinstalled and available for import:
 - [lodash](https://lodash.com)
 - [moment.js](http://momentjs.com/)
 
-You may `yarn add <package> --dev` any additional packages you need, although always bear in mind the file size of the final bundle.
+You may `npm install <package> --save-dev` any additional packages you need, although always bear in mind the file size of the final bundle.
