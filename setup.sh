@@ -26,12 +26,14 @@ read origin
 # Initialise fresh git repository
 rm -rf ".git"
 git init
-git add .
-git commit -am "Initial commit by setup.sh"
 git remote add origin "$origin"
-git push origin master
+git add .
 
 # Install packages
 npm install
 npm prune
 npm shrinkwrap --dev
+
+# Commit and push to remote
+git commit -am "Initial commit by setup.sh"
+git push origin master

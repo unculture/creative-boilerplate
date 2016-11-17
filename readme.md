@@ -34,11 +34,14 @@ $ npm -v
     * Initialises a new git repository
         - `rm -rf .git`
         - `git init`
-        - `git add .`
-        - `git commit -am "Initial commit"`
         - `git remote add origin <new-creative-git-repo>`
-        - `git push origin master`
+        - `git add .`
         - `npm install`
+        - `npm prune`
+        - `npm shrinkwrap --dev`
+        - `git commit -am "Initial commit"`
+        - `git push origin master`
+
 
 4. Now execute `npm run dev` and look for clean output and no errors.
 This will start a watch process so hit Ctl+C to cancel.
