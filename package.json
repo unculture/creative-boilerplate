@@ -1,10 +1,10 @@
 {
   "private": true,
   "name": "creative-boilerplate",
-  "version": "3.6.0",
+  "version": "3.6.1",
   "description": "SmartContent Creative Boilerplate",
   "scripts": {
-    "upgrade": "npm update smartcontent-cdk; npm shrinkwrap --dev; gulp --updateCdk",
+    "upgrade": "npm install smartcontent-cdk; npm shrinkwrap --dev; gulp --updateCdk",
     "events": "gulp --browserEvents --production",
     "dev": "gulp watch",
     "prod": "gulp --production",

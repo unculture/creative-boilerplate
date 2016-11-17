@@ -33,3 +33,5 @@ git push origin master
 
 # Install packages
 npm install
+npm prune
+npm shrinkwrap --dev
