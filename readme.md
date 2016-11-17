@@ -170,4 +170,4 @@ The following libraries are preinstalled and available for import:
 - [lodash](https://lodash.com)
 - [moment.js](http://momentjs.com/)
 
-You may `yarn add <package> --dev` any additional packages you need, although always bear in mind file size of the final bundle.
+You may `yarn add <package> --dev` any additional packages you need, although always bear in mind the file size of the final bundle.
