@@ -11,6 +11,6 @@
     "zip": "gulp zip --production"
   },
   "devDependencies": {
-    "smartcontent-cdk": "git+ssh://git@bitbucket.org/dynamicdo/smartcontent-cdk.git#master"
+    "smartcontent-cdk": "git+ssh://git@github.com:dynamic-do/smartcontent-cdk.git#master"
   }
 }

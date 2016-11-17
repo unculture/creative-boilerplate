@@ -4,7 +4,7 @@
 
 1. Clone the `creative-boilerplate` repository:
 
-    `git clone git@bitbucket.org:dynamicdo/creative-boilerplate.git <new-creative>`
+    `git clone git@github.com:dynamic-do/creative-boilerplate.git <new-creative>`
     
     Where `<new-creative>` is the desired folder name for the new creative.
     
