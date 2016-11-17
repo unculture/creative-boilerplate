@@ -1,15 +1,22 @@
 # SmartContent Creative Boilerplate
 
-## Getting Started
-    
+## System Requirements
+
 The creative boilerplate is tested with the following software versions: 
 
-`bash --version => GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
-
-`node -v => v6.3.1`
-
-`npm -v => 3.10.3`
+```
+$ bash --version
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
     
+$ node -v
+v6.3.1
+
+npm -v
+3.10.3
+```
+
+## Getting Started
+ 
 1. Clone the `creative-boilerplate` repository:
 
     `git clone git@github.com:dynamic-do/creative-boilerplate.git <new-creative>`
