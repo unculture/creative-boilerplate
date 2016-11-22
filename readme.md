@@ -6,7 +6,7 @@ The creative boilerplate is tested with the following software versions:
 
 ```
 $ bash --version
-GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)`
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin16)
     
 $ node -v
 v6.3.1
