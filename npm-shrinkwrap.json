@@ -1,6 +1,6 @@
 {
   "name": "creative-boilerplate",
-  "version": "0.5.9",
+  "version": "0.6.0",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",
