@@ -19,7 +19,7 @@ $ npm -v
  
 1. Clone the `creative-boilerplate` repository:
 
-    `git clone git@github.com:dynamic-do/creative-boilerplate.git <new-creative>`
+    `git clone https://github.com/dynamicdo/creative-boilerplate <new-creative>`
     
     Where `<new-creative>` is the desired folder name for the new creative.
     
