@@ -6,9 +6,10 @@ export default class extends VueCreative {
 
   /*
    Retrieve data using the following methods:
-   - meta: this.dataGetMeta()
-   - campaign: this.dataGetCampaign()
+   - meta:          this.dataGetMeta()
+   - campaign:      this.dataGetCampaign()
    - content-items: this.dataGetItems()
+   - rulesets:      this.dataGetRulesets()
    */
 
   /**
