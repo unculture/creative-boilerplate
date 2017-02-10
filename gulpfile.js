@@ -9,24 +9,29 @@ require('smartcontent-cdk/tasks');
  | The smartcontent-cdk executes standard build tasks for a creative
  | through the creative mixin.
  |
- | Any custom tasks specific to the creative should be defined
- | in `./tasks.js` and called above or below `mix.creative()`.
- |
- | Additionally, if you need to call a custom task between existing tasks
- | `mix.creative()` you can tasks to lifecycle arrays defined below.
+ | Any custom tasks specific to the creative should be defined in `./tasks.js`.
+ | The custom tasks can be called before or after `mix.creative()` below, or
+ | alternatively you may hook into the lifecycle events of `mix.creative()`
+ | by calling the custom tasks in a closure as options.
  |
  */
 
 elixir(function (mix) {
-  // use the below to add your custom tasks to specific points in the
-  // creative task lifecycle
-  var lifeCycle = {};
 
-  // for tasks that run after the dist and zip folders have been emptied
-  lifeCycle.afterDelete = [];
+  var opts = {};
 
-  // for tasks that run before the package is zipped up
-  lifeCycle.beforeZip = [];
+  // Runs after dist and zip have been purged.
+  // ---
+  // opts.afterDelete = function () {
+  //   mix.foo();
+  // };
 
-  mix.creative(lifeCycle);
+  // Runs before the package is zipped.
+  // ---
+  // opts.beforeZip = function () {
+  //   mix.bar();
+  // };
+
+  mix.creative(opts);
+
 });
