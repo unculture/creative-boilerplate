@@ -75,9 +75,9 @@ Build tasks should be run using the following npm scripts:
 | Task              | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
 | `npm run upgrade` | Upgrade SmartContent CDK package and copy latest files to creative        |
-| `npm run dev`     | watches `src` folder for changes & builds into `dist`                     |
+| `npm run dev`     | builds into `dist`                                                        |
+| `npm run watch`   | watches `src` folder for changes & builds into `dist`                     |
 | `npm run prod`    | cleans `dist` and `zip`, builds for production into `dist` & produces zip |
-| `npm run zip`     | produces creative ZIP file from `dist`                                    |
 
 The gulpfile with this boilerplate should require little modification. This includes one task which 
 runs the following operations:
@@ -98,6 +98,7 @@ runs the following operations:
 | Task              | Minifies  | Source maps   | Watches |
 |-------------------|-----------|---------------|---------|
 | `npm run dev`     | no        | yes           | yes     |
+| `npm run watch`   | no        | yes           | yes     |
 | `npm run prod`    | yes       | no            | no      |           
 
 #### Custom Tasks
