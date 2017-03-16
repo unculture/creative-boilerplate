@@ -29,11 +29,9 @@ git init
 git remote add origin "$origin"
 git add .
 
-# Install packages
-npm install
-npm prune
-npm shrinkwrap --dev
-
 # Commit and push to remote
 git commit -am "Initial commit by setup.sh"
 git push origin master
+
+# Install packages
+npm install
