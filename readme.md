@@ -97,7 +97,7 @@ runs the following operations:
 
 | Task              | Minifies  | Source maps   | Watches |
 |-------------------|-----------|---------------|---------|
-| `npm run dev`     | no        | yes           | yes     |
+| `npm run dev`     | no        | yes           | no      |
 | `npm run watch`   | no        | yes           | yes     |
 | `npm run prod`    | yes       | no            | no      |           
 
