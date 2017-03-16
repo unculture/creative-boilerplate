@@ -36,11 +36,9 @@ $ npm -v
         - `git init`
         - `git remote add origin <new-creative-git-repo>`
         - `git add .`
-        - `npm install`
-        - `npm prune`
-        - `npm shrinkwrap --dev`
         - `git commit -am "Initial commit"`
         - `git push origin master`
+        - `npm install`
 
 
 4. Now execute `npm run dev` and look for clean output and no errors.
