@@ -1,2 +1,4 @@
 /node_modules
-/dist/assets
+/npm-debug.log
+/dist/*
+!/dist/.gitkeep
