@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "creative-boilerplate",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "SmartContent Creative Boilerplate",
   "scripts": {
     "upgrade": "npm install smartcontent-cdk; gulp --updateCdk",
