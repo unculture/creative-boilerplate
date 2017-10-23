@@ -86,7 +86,7 @@ runs the following operations:
 | copy          | Copy fonts and images                                     | dev / prod            |
 | sass          | Compiles `src/sass/main.sass` into `dist/css/main.css`    | dev / prod **         |
 | postCss       | Updates CSS URL paths ready for inline-source             | prod                  |
-| rollup        | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
+| webpack       | Transpiles `src/js/main.js` into `dist/js/main.js`        | dev / prod **         |
 | processHtml   | Replaces template variables                               | dev / prod            |
 | processHtml   | Inlines CSS and JS                                        | prod                  |
 | zip           | Creates creative ZIP file in `zip`                        | prod / zip            |
