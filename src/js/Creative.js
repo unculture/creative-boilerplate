@@ -50,7 +50,8 @@ export default class extends VueCreative {
 
   /**
    * If verification of Creative asset loading is required,
-   * return a list of assets `type` and `name`.
+   * return a list of assets `type` and `file`.
+   * File should be a path relative to the dist folder.
    * Valid types are 'image' and 'video'.
    *
    * @return []
@@ -58,8 +59,8 @@ export default class extends VueCreative {
   // creativeAssets() {
   //   return [
   //     {
-  //       name: 'foo',
-  //       type: 'image'
+  //       file: 'videos/foo.mp4',
+  //       type: 'video'
   //     }
   //   ];
   // }
@@ -67,6 +68,7 @@ export default class extends VueCreative {
   /**
    * If verification of asset loading is required, return a
    * list of content item asset `type` and `name`.
+   * Name is the data item content key.
    * Valid types are 'image' and 'video'.
    *
    * @return []
@@ -74,7 +76,7 @@ export default class extends VueCreative {
   // itemAssets() {
   //   return [
   //     {
-  //       name: 'foo',
+  //       name: 'avatar',
   //       type: 'image'
   //     }
   //   ];
