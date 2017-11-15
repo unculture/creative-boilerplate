@@ -5,6 +5,7 @@
  */
 import Creative from './Creative.js';
 import {versionEvent} from 'smartcontent-cdk/lib/version';
+import scss from '../sass/main.scss';
 
 /**
  * Initialise Creative and Listen for events.
