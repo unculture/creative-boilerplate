@@ -174,3 +174,7 @@ The following libraries are preinstalled and available for import:
 - [moment.js](http://momentjs.com/)
 
 You may `npm install <package> --save-dev` any additional packages you need, although always bear in mind the file size of the final bundle.
+
+#### Further Guidance
+
+Further guidance can be found [on confluence](https://smartcontent.atlassian.net/wiki/spaces/SMAR/pages/37261057/Campaign+Development+Guidance).
