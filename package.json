@@ -5,7 +5,7 @@
   "description": "SmartContent Creative Boilerplate",
   "scripts": {
     "upgrade": "npm install smartcontent-cdk",
-    "events": "gulp --browserEvents --production",
+    "events": "",
     "watch": "NODE_ENV=development webpack-dev-server",
     "prod": "NODE_ENV=production webpack"
   },
@@ -15,4 +15,3 @@
     "webpack-merge": "^4.1.1"
   }
 }
-
